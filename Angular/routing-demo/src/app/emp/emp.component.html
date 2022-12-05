@@ -1,0 +1,16 @@
+<h1>Employee Component</h1>
+
+<table border="2" width="50%">
+
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Salary</th>
+    </thead>
+    <tr *ngFor= "let e of employee">
+        <td><a [routerLink]="['/emp', e.eid]">{{e.eid}}</a></td>
+        <td>{{e.name}}</td>
+        <td>{{e.salary}}</td>
+        
+    </tr>
+</table>

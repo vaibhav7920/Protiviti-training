@@ -1,0 +1,39 @@
+<hr>
+
+<!-- if -->
+<h1>ngIf Demo: Dierctive</h1>
+<div *ngIf = "result"> Pass</div>
+<hr>
+
+
+<!-- if else -->
+<h1> ng if Else Demo</h1>
+<div *ngIf="isLogin;else isLogout">You are logged in</div>
+<ng-template #isLogout>
+    You are logged out
+</ng-template>
+<hr>
+
+<!-- Switch -->
+<h1>ng Switch: Directive</h1>
+<ul [ngSwitch]="loginName">
+    <li *ngSwitchCase="'admin'"> 
+        <p>Admin is  logged in</p>
+    </li>
+    <li *ngSwitchCase="'user'"> 
+        <p>User is  logged in</p>
+    </li>
+    <li *ngSwitchDefault> 
+        <p>Enter correct name</p>
+    </li>
+
+</ul>
+
+<hr>
+<!-- For LOOP -->
+<h1>For LOOP Demo</h1>
+<ul *ngFor ="let p of product">
+    {{p.id}}
+    {{p.name}}
+    {{p.price}}
+</ul>

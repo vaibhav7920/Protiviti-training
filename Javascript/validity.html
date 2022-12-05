@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo Page</title> 
+    </head>
+
+    <body>
+        <h1>Form Validation</h1>
+        <p> Enter a number</p>
+       <form>
+    
+        <fieldset>
+            
+            
+            <input id="inp1" type="number" min="100" max="300" required>
+            <button onclick="myfunc()">Ok</button>
+        </fieldset>
+       </form>
+
+       <p id="demo">
+       </p>
+
+       <script>
+        function myfunc(){
+            const inp=document.getElementById("inp1");
+            if(!inp.checkValidity()){
+                document.getElementById("demo").innerHTML=inp.validationMessage;
+            }
+            else{
+                document.getElementById("demo").innerHTML="ok";
+            }
+        }
+       </script>
+    </body>
+
+</html>

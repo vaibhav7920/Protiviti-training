@@ -1,0 +1,56 @@
+<hr>
+
+<!-- Style Binding -->
+<h1>Style Binding</h1>
+<p [style.background-color]="myColor">This paragraph shows style Binding</p>
+<hr>
+
+
+
+<!-- Class Binding -->
+<h1> Class binding</h1>
+<p [class] ="myCssClass"> Red</p>
+<p [class] ="applyCSSClass"> Blue</p>
+
+
+<hr>
+
+
+
+
+<!-- click in typescript / Event interpolation -->
+<h1>Event Interpolation</h1>
+<button (click)="display()"> employe details</button> 
+<hr>
+
+<!-- String interpolation -->
+<h1>String Interpolation</h1>
+<p>Product ID: {{prodid}}</p>
+<p>Product Name: {{prodname}}</p>
+<p>Product Company: {{company}}</p>
+
+<hr>
+
+
+
+<h1>Product component</h1>
+<div>
+<img src="https://th.bing.com/th/id/OIP.JxajEM4SG_IE6UCPWSSlNQHaD5?w=331&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+</div>
+<div>
+    <img src="https://th.bing.com/th/id/OIP.NYqAmQImuxPTUIzeNj_TEAHaEK?w=310&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+    </div>
+<div>
+<img src="image.png">
+</div>
+<hr>
+
+<!-- two Way Binding -->
+<h1> Twoi way Binding</h1>
+Product ID: <input type="text" [(ngModel)] ="pid"><br>
+Product Name: <input type="text" [(ngModel)] ="pname"><br>
+Product Price: <input type="text" [(ngModel)] ="price"><br>
+
+{{pid}}
+{{pname}}
+{{price}}

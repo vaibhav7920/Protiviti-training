@@ -1,0 +1,33 @@
+<h1>Product Component</h1>
+
+<!-- <table border="2" width="50%">
+
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>price</th>
+    </thead>
+    <tr *ngFor= "let p of product">
+        <td>{{p.pid}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+
+    </tr>
+</table> -->
+
+<table border="2" width="50%">
+
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>price</th>
+    </thead>
+    <tr *ngFor= "let p of products">
+        <td><a [routerLink]="['/product', p.pid]">{{p.pid}}</a></td>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+
+    </tr>
+</table>
+
+<router-outlet></router-outlet>

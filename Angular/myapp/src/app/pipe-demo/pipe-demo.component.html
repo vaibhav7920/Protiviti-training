@@ -1,0 +1,52 @@
+<h1>Pipes Demo</h1>
+
+<p>Today's Date: {{presentDate}}</p>
+
+<p>Today's Date: {{presentDate | date}}</p>
+
+<p>Short Date: {{presentDate | date: 'shortDate'}}</p>
+
+<p>Full Date: {{presentDate | date: 'fullDate'}}</p>
+
+<p>Formated Date: {{presentDate | date: 'M/d/yyyy'}}</p>
+
+<hr>
+<h1>Chained Pipe</h1>
+
+<p>Full Date: {{presentDate | date: 'fullDate'| uppercase}}</p>
+<p>Full Date: {{presentDate | date: 'fullDate'| lowercase}}</p>
+
+<hr>
+<h1>Currency Pipe</h1>
+<p>{{price}}</p>
+<p>{{price | currency: 'INR'}}</p>
+<p>{{price | currency: 'EUR' }}</p>
+
+
+<hr>
+<h1>Slice Pipes</h1>
+
+<div>Start index: {{fruits | slice :2}}</div>
+<div>Start and end index: {{fruits | slice :1:4}}</div>
+<div>negative index: {{fruits | slice :-2}}</div>
+<div> negative Start and end index: {{fruits | slice :-4:-2}}</div>
+
+<hr>
+
+<h1>Decimal pipes</h1>
+<p>Decimal Number 1 :{{decimalNum1}}</p>
+<p>Decimal Number 1 :{{decimalNum1 | number}}</p>
+<p>Decimal Number 1 :{{decimalNum1 | number : '3.3'}}</p>
+<p>Decimal Number 1 :{{decimalNum1 | number:'4.1-5'}}</p>
+<p>Decimal Number 2 :{{decimalNum2 | number: '2.2-2'}}</p>
+
+<hr>
+
+<h1>Percentage pipes</h1>
+<p>Decimal Number 1 :{{decimalNum1 | percent : '2.2'}}</p>
+
+
+<hr>
+
+<h1>Json pipes</h1>
+<p>{{product | json}}</p>
