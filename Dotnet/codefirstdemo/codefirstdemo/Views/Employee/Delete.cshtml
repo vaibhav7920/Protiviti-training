@@ -1,0 +1,92 @@
+﻿@model codefirstdemo.Context.Employee
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+
+
+
+<div>
+
+    <table>
+
+        <tr>
+
+            <td>
+
+                @Html.DisplayNameFor(d => d.Name)
+
+            </td>
+
+            <td>
+
+                @Html.DisplayFor(d => d.Name)
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+
+                @Html.DisplayNameFor(d => d.Address)
+
+            </td>
+
+            <td>
+
+                @Html.DisplayFor(d => d.Address)
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+
+                @Html.DisplayNameFor(d => d.CompanyName)
+
+            </td>
+
+            <td>
+
+                @Html.DisplayFor(d => d.CompanyName)
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+
+                @Html.DisplayNameFor(d => d.Designation)
+
+            </td>
+
+            <td>
+
+                @Html.DisplayFor(d => d.Designation)
+
+            </td>
+            r>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(d => d.Salary)
+            </td>
+            <td>
+                @Html.DisplayFor(d => d.Salary)
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="EmployeeId" />
+    <input type="submit" value="delete" class="btn btn-danger" />
+    <a asp-action="Index">Back to List</a>
+</form>
+

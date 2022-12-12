@@ -1,0 +1,48 @@
+﻿@model codefirstdemo.Context.Employee
+
+<h1> Enter Employee Details</h1>
+
+<form asp-controller="Employee" asp-action="create" method="post">
+    @*<div asp-validation-summary="All" class="text-danger"></div>*@
+    
+    <div class="form-group">
+        <label asp-for="@Model.Name" class="control-label"></label>
+        <input asp-for="@Model.Name" />
+ 
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.Age" class="control-label"></label>
+        <input asp-for="@Model.Age" />
+        
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Address" class="control-label"></label>
+        <input asp-for="@Model.Address" />
+   
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.CompanyName" class="control-label"></label>
+        <input asp-for="@Model.CompanyName" />
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.Designation" class="control-label"></label>
+        <input asp-for="@Model.Designation" />
+       
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.Salary" class="control-label"></label>
+        <input asp-for="@Model.Salary" />
+       
+    </div>
+
+
+    
+    <button type="submit">Submit</button>
+    <a asp-action="Index">Go to List</a>
+</form>
+

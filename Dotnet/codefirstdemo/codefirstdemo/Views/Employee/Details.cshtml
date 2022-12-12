@@ -1,0 +1,94 @@
+﻿@model codefirstdemo.Context.Employee
+
+
+<div>
+
+    <table>
+
+        <tr>
+
+            <td>
+
+               @Html.DisplayNameFor(d => d.Name)
+
+            </td>
+
+            <td>
+
+                @Html.DisplayFor(d => d.Name)
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+
+                @Html.DisplayNameFor(d => d.Address)
+
+            </td>
+
+            <td>
+
+                @Html.DisplayFor(d => d.Address)
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+
+                @Html.DisplayNameFor(d => d.CompanyName)
+
+            </td>
+
+            <td>
+
+                @Html.DisplayFor(d => d.CompanyName)
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+
+                @Html.DisplayNameFor(d => d.Designation)
+
+            </td>
+
+            <td>
+
+                @Html.DisplayFor(d => d.Designation)
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+
+                @Html.DisplayNameFor(d => d.Salary)
+
+            </td>
+
+            <td>
+
+                @Html.DisplayFor(d => d.Salary)
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+
+
+<a asp-action="Index">Back to List</a>

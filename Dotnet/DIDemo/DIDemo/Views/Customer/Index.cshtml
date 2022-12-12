@@ -1,0 +1,33 @@
+﻿@model IEnumerable<DIDemo.Models.Customer>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layoutdemo.cshtml";
+}
+
+<h1>Index</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Customer </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.custid
+            </td>
+            <td>
+                @item.name
+            </td>
+            <td>
+                @item.age
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
